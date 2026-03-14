@@ -2,6 +2,7 @@
 <html lang="id">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Nex Development - Tema Website Berita</title>
 
 <style>
@@ -64,12 +65,116 @@ color:#555;
 font-size:14px;
 }
 
+/* PRICING NOTE */
+.pricing-note {
+margin-top:30px;
+background:#f8f9fa;
+display:inline-block;
+padding:15px 25px;
+border-radius:8px;
+border:1px solid #e0e0e0;
+text-align:left;
+font-size:14px;
+color:#444;
+line-height:1.6;
+}
+
+.note-badge {
+font-size:11px;
+padding:3px 8px;
+border-radius:4px;
+color:white;
+font-weight:bold;
+margin-right:5px;
+display:inline-block;
+}
+
+.note-badge.free {
+background:#27ae60;
+}
+
+.note-badge.premium {
+background:#e67e22;
+}
+
 /* CONTAINER */
 
 .container{
 max-width:1200px;
 margin:auto;
 padding:40px 20px;
+}
+
+/* SECTION TITLE */
+
+.section-title{
+text-align:center;
+margin:60px 0 30px 0;
+}
+
+.section-title h2{
+font-size:28px;
+color:#333;
+margin-bottom:10px;
+}
+
+.section-title p{
+color:#666;
+font-size:16px;
+}
+
+/* COMING SOON CARD */
+
+.card-coming-soon{
+background:white;
+border-radius:10px;
+padding:30px 20px;
+text-align:center;
+box-shadow:0 5px 15px rgba(0,0,0,0.05);
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+gap:12px;
+border:2px dashed #ddd;
+transition:0.3s;
+}
+
+.card-coming-soon:hover{
+transform:translateY(-6px);
+box-shadow:0 15px 30px rgba(0,0,0,0.1);
+border-color:#bbb;
+}
+
+.card-coming-soon .icon{
+font-size:36px;
+background:#f8f9fa;
+width:70px;
+height:70px;
+display:flex;
+justify-content:center;
+align-items:center;
+border-radius:50%;
+}
+
+.card-coming-soon h3{
+font-size:18px;
+color:#333;
+}
+
+.card-coming-soon p{
+font-size:14px;
+color:#777;
+line-height:1.5;
+}
+
+.badge-soon{
+background:#9b59b6;
+color:white;
+font-size:11px;
+padding:4px 8px;
+border-radius:4px;
+font-weight:bold;
 }
 
 /* GRID */
@@ -172,6 +277,34 @@ color:#777;
 font-size:14px;
 }
 
+/* RESPONSIVE (MOBILE) */
+@media (max-width: 600px) {
+.header {
+padding: 15px 20px;
+}
+
+.hero {
+padding: 50px 15px;
+}
+
+.hero h1 {
+font-size: 28px;
+}
+
+.trust {
+gap: 15px;
+flex-direction: column;
+}
+
+.pricing-note {
+margin-top: 20px;
+padding: 12px 15px;
+font-size: 13px;
+display: block;
+text-align: left;
+}
+}
+
 </style>
 </head>
 
@@ -191,6 +324,11 @@ font-size:14px;
 <div>✓ Website siap online</div>
 <div>✓ SEO Friendly</div>
 <div>✓ Siap monetisasi AdSense</div>
+</div>
+
+<div class="pricing-note">
+<div><span class="note-badge free">FREE</span> Tanpa biaya tambahan selain Domain & Server.</div>
+<div style="margin-top:8px;"><span class="note-badge premium">PREMIUM</span> Ada biaya tambahan (harga tema) selain Domain & Server.</div>
 </div>
 
 </div>
@@ -315,6 +453,39 @@ font-size:14px;
 <a class="btn order" href="https://wa.me/6285179915187?text=Halo%20Nex%20Development,%20saya%20ingin%20memesan%20website%20tema%20Warta%20(Rp300.000)" target="_blank">Pesan</a>
 
 </div>
+</div>
+
+</div>
+
+<div class="section-title">
+<h2>Tools & Plugin (Coming Soon)</h2>
+<p>Solusi cerdas dengan bantuan AI untuk mengotomatisasi pekerjaan redaksi Anda.</p>
+</div>
+
+<div class="grid">
+
+<!-- Auto Posting -->
+<div class="card-coming-soon">
+<div class="icon">🤖</div>
+<div class="badge-soon">COMING SOON</div>
+<h3>Auto Posting Berita AI</h3>
+<p>Generasi dan posting artikel otomatis dari berbagai sumber terpercaya menggunakan AI.</p>
+</div>
+
+<!-- YouTube ke Artikel -->
+<div class="card-coming-soon">
+<div class="icon">🎥</div>
+<div class="badge-soon">COMING SOON</div>
+<h3>YouTube ke Artikel</h3>
+<p>Ubah video YouTube menjadi artikel berita berkualitas secara otomatis menggunakan AI.</p>
+</div>
+
+<!-- Request Tool -->
+<div class="card-coming-soon" style="border: 2px dashed #3498db; background: #f4faff;">
+<div class="icon" style="background: white;">💡</div>
+<h3>Butuh Tools Lain?</h3>
+<p>Kami bisa membuat fitur khusus atau plugin kustom sesuai kebutuhan media Anda.</p>
+<a class="btn preview" href="https://wa.me/6285179915187?text=Halo%20Nex%20Development,%20saya%20ingin%20request%20pembuatan%20tools/plugin%20custom" target="_blank" style="margin-top: 5px;">Request Tools</a>
 </div>
 
 </div>
